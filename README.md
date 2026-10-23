@@ -5,6 +5,8 @@
 
 方法论文档见 [TRAE高效开发手册.md](TRAE高效开发手册.md)：怎么在 90 分钟内把随机关键词变成可演示 Demo、怎么并行、怎么兜底。
 
+在线体验（静态版，无需后端）：<https://skywalk163.github.io/renlei-2100/>
+
 ## 运行
 
 ```powershell
