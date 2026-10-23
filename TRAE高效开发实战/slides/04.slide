@@ -1,0 +1,69 @@
+<Slide style={{ width: 1280, height: 720, background: '#0A0D0C', padding: '40px 72px 48px 72px', flexDirection: 'column' }}>
+    <Box style={{ height: 86, flexDirection: 'column', gap: 10 }}>
+        <Text style={{ fontSize: 34, fontWeight: 'bold', color: '#E9F1EC', letterSpacing: 0.5 }}>先写 60 秒脚本，再写第一行代码</Text>
+        <Text style={{ fontSize: 17, color: '#E9F1EC', opacity: 0.55 }}>脚本不是文案，是需求文档：它决定了哪些界面状态必须存在，哪些功能根本不用做。</Text>
+    </Box>
+
+    <Box style={{ height: 486, marginTop: 16, flexDirection: 'row', gap: 40 }}>
+        <Box style={{ width: 616, height: 486, flexDirection: 'column', justifyContent: 'space-between', gap: 6 }}>
+            <Box style={{ flexDirection: 'row', gap: 20, height: 112 }}>
+                <Text style={{ width: 92, fontSize: 22, fontWeight: 'bold', color: '#3DDC84' }}>0–10s</Text>
+                <Box style={{ flexDirection: 'column', gap: 8 }}>
+                    <Text style={{ fontSize: 19, fontWeight: 'bold', color: '#E9F1EC' }}>谁的问题，一句人话</Text>
+                    <Text style={{ fontSize: 15, color: '#E9F1EC', opacity: 0.6, lineHeight: 1.7 }}>把三个旋钮交给程序，推演 2100 年的人类还有几种活法。不需要背景介绍。</Text>
+                </Box>
+            </Box>
+            <Box style={{ width: 616, height: 1, background: 'rgba(233,241,236,0.09)' }} />
+
+            <Box style={{ flexDirection: 'row', gap: 20, height: 112 }}>
+                <Text style={{ width: 92, fontSize: 22, fontWeight: 'bold', color: '#3DDC84' }}>10–40s</Text>
+                <Box style={{ flexDirection: 'column', gap: 8 }}>
+                    <Text style={{ fontSize: 19, fontWeight: 'bold', color: '#E9F1EC' }}>现场点一次，别讲截图</Text>
+                    <Text style={{ fontSize: 15, color: '#E9F1EC', opacity: 0.6, lineHeight: 1.7 }}>拖三个滑块，点「推演 2100」，屏幕上必须长出指数、三条分支和一封回信。</Text>
+                </Box>
+            </Box>
+            <Box style={{ width: 616, height: 1, background: 'rgba(233,241,236,0.09)' }} />
+
+            <Box style={{ flexDirection: 'row', gap: 20, height: 112 }}>
+                <Text style={{ width: 92, fontSize: 22, fontWeight: 'bold', color: '#3DDC84' }}>40–55s</Text>
+                <Box style={{ flexDirection: 'column', gap: 8 }}>
+                    <Text style={{ fontSize: 19, fontWeight: 'bold', color: '#E9F1EC' }}>技术只用一句话</Text>
+                    <Text style={{ fontSize: 15, color: '#E9F1EC', opacity: 0.6, lineHeight: 1.7 }}>逻辑用光明写成纯函数，传输层是薄壳，静态版直接查表——够评委判断含金量就行。</Text>
+                </Box>
+            </Box>
+            <Box style={{ width: 616, height: 1, background: 'rgba(233,241,236,0.09)' }} />
+
+            <Box style={{ flexDirection: 'row', gap: 20, height: 112 }}>
+                <Text style={{ width: 92, fontSize: 22, fontWeight: 'bold', color: '#3DDC84' }}>55–60s</Text>
+                <Box style={{ flexDirection: 'column', gap: 8 }}>
+                    <Text style={{ fontSize: 19, fontWeight: 'bold', color: '#E9F1EC' }}>下一步，一句话留钩子</Text>
+                    <Text style={{ fontSize: 15, color: '#E9F1EC', opacity: 0.6, lineHeight: 1.7 }}>参数表已经铺满 1331 组，下一步让每个人都能查到自己那一格未来。</Text>
+                </Box>
+            </Box>
+        </Box>
+
+        <Box style={{ width: 480, height: 486, flexDirection: 'column', gap: 12 }}>
+            <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 10, height: 24 }}>
+                <Box style={{ width: 4, height: 16, background: '#3DDC84' }} />
+                <Text style={{ fontSize: 13, color: '#3DDC84', letterSpacing: 2 }}>只做三个界面状态</Text>
+            </Box>
+            <Box style={{ flex: 1, background: '#1A2620', border: '1px solid rgba(233,241,236,0.10)', borderRadius: 4, padding: 16, flexDirection: 'column', gap: 8, justifyContent: 'center' }}>
+                <Text style={{ fontSize: 18, fontWeight: 'bold', color: '#E9F1EC' }}>初始态</Text>
+                <Text style={{ fontSize: 13.5, color: '#E9F1EC', opacity: 0.6, lineHeight: 1.7 }}>滑块停在默认值，右侧留一块「未推演」的空面板——空态不能是白屏。</Text>
+            </Box>
+            <Box style={{ flex: 1, background: '#1A2620', border: '1px solid rgba(233,241,236,0.10)', borderRadius: 4, padding: 16, flexDirection: 'column', gap: 8, justifyContent: 'center' }}>
+                <Text style={{ fontSize: 18, fontWeight: 'bold', color: '#E9F1EC' }}>处理中</Text>
+                <Text style={{ fontSize: 13.5, color: '#E9F1EC', opacity: 0.6, lineHeight: 1.7 }}>按钮变「推演中」，2.5 秒超时后自动走本地兜底，状态栏标注「本地兜底」。</Text>
+            </Box>
+            <Box style={{ flex: 1, background: '#1A2620', border: '1px solid rgba(61,220,132,0.22)', borderRadius: 4, padding: 16, flexDirection: 'column', gap: 8, justifyContent: 'center' }}>
+                <Text style={{ fontSize: 18, fontWeight: 'bold', color: '#3DDC84' }}>结果态</Text>
+                <Text style={{ fontSize: 13.5, color: '#E9F1EC', opacity: 0.6, lineHeight: 1.7 }}>指数、三条分支、三个转折点、一封回信，右下角留「再来一次」。</Text>
+            </Box>
+        </Box>
+    </Box>
+
+    <Box style={{ height: 26, flexDirection: 'row', justifyContent: 'space-between', alignItems: 'flex-end' }}>
+        <Text style={{ fontSize: 12, color: '#E9F1EC', opacity: 0.38 }}>TRAE 高效开发实战 · 1024 济宁</Text>
+        <Text style={{ fontSize: 12, color: '#E9F1EC', opacity: 0.38 }}>04 / 11</Text>
+    </Box>
+</Slide>

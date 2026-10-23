@@ -1,0 +1,90 @@
+<Slide style={{ width: 1280, height: 720, background: '#0A0D0C', padding: '40px 72px 48px 72px', flexDirection: 'column' }}>
+    <Box style={{ height: 86, flexDirection: 'column', gap: 10 }}>
+        <Text style={{ fontSize: 34, fontWeight: 'bold', color: '#E9F1EC', letterSpacing: 0.5 }}>并行靠的是文件所有权，不是多开几个会话</Text>
+        <Text style={{ fontSize: 17, color: '#E9F1EC', opacity: 0.55 }}>三条线同时开工、彼此只见契约；集成者不参与并行编码，时间全留给合并和修边界。</Text>
+    </Box>
+
+    <Box style={{ height: 486, marginTop: 16, flexDirection: 'column' }}>
+        <Box style={{ height: 46, background: 'rgba(61,220,132,0.10)', border: '1px solid rgba(61,220,132,0.28)', borderRadius: 4, flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: 14 }}>
+            <Text style={{ fontSize: 15, fontWeight: 'bold', color: '#3DDC84' }}>契约.md</Text>
+            <Text style={{ fontSize: 13, color: '#E9F1EC', opacity: 0.6 }}>字段名 · 函数签名 · 接口路径 · 文件所有权表 —— 开工后冻结，谁都不许改</Text>
+        </Box>
+
+        <Box style={{ flexDirection: 'row', gap: 24, height: 290 }}>
+            <Box style={{ width: 362, flexDirection: 'column', alignItems: 'center' }}>
+            <Box style={{ width: 1, height: 18, background: 'rgba(61,220,132,0.32)' }} />
+            <Box style={{ width: 362, flex: 1, background: '#1A2620', border: '1px solid rgba(233,241,236,0.10)', borderRadius: 4, padding: 18, flexDirection: 'column', gap: 10 }}>
+                <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 10 }}>
+                    <Text style={{ fontSize: 13, color: '#3DDC84', letterSpacing: 1 }}>A</Text>
+                    <Text style={{ fontSize: 19, fontWeight: 'bold', color: '#E9F1EC' }}>逻辑 / 数据</Text>
+                </Box>
+                <Text style={{ fontSize: 12.5, color: '#E9F1EC', opacity: 0.45 }}>引擎.light · 自测.light</Text>
+                <Text style={{ fontSize: 14, color: '#E9F1EC', opacity: 0.62, lineHeight: 1.7 }}>
+                    存续指数、判定、三分支、转折点、回信，全部写成纯函数，不用随机数——同一输入必得同一输出。
+                </Text>
+                <Text style={{ fontSize: 12.5, color: '#3DDC84', marginTop: 'auto' }}>交付：light check 通过 + 三组自测</Text>
+            </Box>
+            </Box>
+
+            <Box style={{ width: 362, flexDirection: 'column', alignItems: 'center' }}>
+            <Box style={{ width: 1, height: 18, background: 'rgba(61,220,132,0.5)' }} />
+            <Box style={{ width: 362, flex: 1, background: '#1A2620', border: '1px solid rgba(61,220,132,0.24)', borderRadius: 4, padding: 18, flexDirection: 'column', gap: 10 }}>
+                <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 10 }}>
+                    <Text style={{ fontSize: 13, color: '#3DDC84', letterSpacing: 1 }}>B</Text>
+                    <Text style={{ fontSize: 19, fontWeight: 'bold', color: '#E9F1EC' }}>服务 / 接口</Text>
+                    <Box style={{ paddingLeft: 8, paddingRight: 8, paddingTop: 2, paddingBottom: 2, border: '1px solid rgba(61,220,132,0.3)', borderRadius: 3 }}>
+                        <Text style={{ fontSize: 11, color: '#3DDC84' }}>中途改道</Text>
+                    </Box>
+                </Box>
+                <Text style={{ fontSize: 12.5, color: '#E9F1EC', opacity: 0.45 }}>主.light → server.py 薄壳</Text>
+                <Text style={{ fontSize: 14, color: '#E9F1EC', opacity: 0.62, lineHeight: 1.7 }}>
+                    原计划用 Light 起 HTTP 服务，实测工厂在运行时不可用，改成标准库薄壳：只做静态文件与转发，业务一行不进 Python。
+                </Text>
+                <Text style={{ fontSize: 12.5, color: '#3DDC84', marginTop: 'auto' }}>交付：curl 拿到与契约一致的 JSON</Text>
+            </Box>
+            </Box>
+
+            <Box style={{ width: 362, flexDirection: 'column', alignItems: 'center' }}>
+            <Box style={{ width: 1, height: 18, background: 'rgba(61,220,132,0.32)' }} />
+            <Box style={{ width: 362, flex: 1, background: '#1A2620', border: '1px solid rgba(233,241,236,0.10)', borderRadius: 4, padding: 18, flexDirection: 'column', gap: 10 }}>
+                <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 10 }}>
+                    <Text style={{ fontSize: 13, color: '#3DDC84', letterSpacing: 1 }}>C</Text>
+                    <Text style={{ fontSize: 19, fontWeight: 'bold', color: '#E9F1EC' }}>界面 / 外壳</Text>
+                </Box>
+                <Text style={{ fontSize: 12.5, color: '#E9F1EC', opacity: 0.45 }}>web/index.html · style.css · app.js</Text>
+                <Text style={{ fontSize: 14, color: '#E9F1EC', opacity: 0.62, lineHeight: 1.7 }}>
+                    三态渲染、2.5 秒超时走本地兜底、原生无 CDN 无构建——现场不装依赖也能打开。
+                </Text>
+                <Text style={{ fontSize: 12.5, color: '#3DDC84', marginTop: 'auto' }}>交付：成功态与错误态各一张无头截图</Text>
+            </Box>
+            </Box>
+        </Box>
+
+        <Box style={{ height: 54, marginTop: 14, flexDirection: 'row', alignItems: 'center', gap: 28 }}>
+            <Text style={{ fontSize: 13, color: '#E9F1EC', opacity: 0.4 }}>三条禁令</Text>
+            <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 8 }}>
+                <FAIcon name='times' style={{ fill: 'rgba(233,241,236,0.35)', width: 11, height: 11 }} />
+                <Text style={{ fontSize: 13.5, color: '#E9F1EC', opacity: 0.68 }}>不并行跑 dev server</Text>
+            </Box>
+            <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 8 }}>
+                <FAIcon name='times' style={{ fill: 'rgba(233,241,236,0.35)', width: 11, height: 11 }} />
+                <Text style={{ fontSize: 13.5, color: '#E9F1EC', opacity: 0.68 }}>不并行装依赖</Text>
+            </Box>
+            <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 8 }}>
+                <FAIcon name='times' style={{ fill: 'rgba(233,241,236,0.35)', width: 11, height: 11 }} />
+                <Text style={{ fontSize: 13.5, color: '#E9F1EC', opacity: 0.68 }}>不并行改同一个文件（含 README、入口、配置）</Text>
+            </Box>
+            <Text style={{ fontSize: 13, color: '#3DDC84', marginLeft: 'auto' }}>B 线改道，A 与 C 一行没返工</Text>
+        </Box>
+
+        <Box style={{ marginTop: 'auto', flexDirection: 'row', alignItems: 'center', gap: 12, height: 44, background: 'rgba(233,241,236,0.03)', borderRadius: 4, paddingLeft: 16, paddingRight: 16 }}>
+            <Box style={{ width: 2, height: 18, background: '#3DDC84' }} />
+            <Text style={{ fontSize: 14, color: '#E9F1EC', opacity: 0.66 }}>集成者只改入口文件与共享样式，其余文件原样接收；合并后统一跑一次构建、开一次 dev server。</Text>
+        </Box>
+    </Box>
+
+    <Box style={{ height: 26, flexDirection: 'row', justifyContent: 'space-between', alignItems: 'flex-end' }}>
+        <Text style={{ fontSize: 12, color: '#E9F1EC', opacity: 0.38 }}>TRAE 高效开发实战 · 1024 济宁</Text>
+        <Text style={{ fontSize: 12, color: '#E9F1EC', opacity: 0.38 }}>06 / 11</Text>
+    </Box>
+</Slide>

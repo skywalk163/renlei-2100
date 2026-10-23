@@ -1,0 +1,79 @@
+<Slide style={{ width: 1280, height: 720, background: '#0A0D0C', padding: '40px 72px 48px 72px', flexDirection: 'column' }}>
+    <Box style={{ height: 86, flexDirection: 'column', gap: 10 }}>
+        <Text style={{ fontSize: 34, fontWeight: 'bold', color: '#E9F1EC', letterSpacing: 0.5 }}>并行到底快多少？两个数字，和它们的边界</Text>
+        <Text style={{ fontSize: 17, color: '#E9F1EC', opacity: 0.55 }}>下面不是估算，是三次真实任务在本地跑出来的墙钟时间。</Text>
+    </Box>
+
+    <Box style={{ height: 486, marginTop: 16, flexDirection: 'row', gap: 48 }}>
+        <Box style={{ width: 400, flexDirection: 'column' }}>
+            <Text style={{ fontSize: 13, color: '#3DDC84', letterSpacing: 2 }}>等效提速 · 均衡任务</Text>
+            <Text style={{ fontSize: 120, fontWeight: 'bold', color: '#3DDC84', lineHeight: 1.05, marginTop: 4 }}>2.6×</Text>
+            <Text style={{ fontSize: 15, color: '#E9F1EC', opacity: 0.7, lineHeight: 1.7, marginTop: 6 }}>三个体量相当的编码任务（引擎 / UI / 外壳）同时开工：82 秒完成，逐个做要 213 秒。</Text>
+
+            <Box style={{ height: 1, background: 'rgba(233,241,236,0.10)', marginTop: 26, marginBottom: 22 }} />
+
+            <Text style={{ fontSize: 13, color: '#E9F1EC', opacity: 0.45, letterSpacing: 2 }}>等效提速 · 不均衡任务</Text>
+            <Text style={{ fontSize: 66, fontWeight: 'bold', color: '#E9F1EC', lineHeight: 1.1, marginTop: 2 }}>1.44×</Text>
+            <Text style={{ fontSize: 15, color: '#E9F1EC', opacity: 0.7, lineHeight: 1.7, marginTop: 6 }}>混进「读代码调研」这类长尾任务后：698 秒 vs 1007 秒，收益被最长的那条线吃掉。</Text>
+        </Box>
+
+        <Box style={{ width: 640, flexDirection: 'column', gap: 18 }}>
+            <Table
+                style={{ width: 640, height: 150 }}
+                defaultTextStyle={{ fontSize: 13.5, textAlign: 'left', color: '#E9F1EC' }}
+                defaultCellStyle={{
+                    border: {
+                        left: { width: 1, color: 'rgba(233,241,236,0.08)' },
+                        right: { width: 1, color: 'rgba(233,241,236,0.08)' },
+                        top: { width: 1, color: 'rgba(233,241,236,0.08)' },
+                        bottom: { width: 1, color: 'rgba(233,241,236,0.08)' },
+                    },
+                }}
+                cells={[
+                    [
+                        { text: '场景', textStyle: { bold: true, color: '#3DDC84' }, cellStyle: { background: { color: '#1A2620' } } },
+                        { text: '墙钟', textStyle: { bold: true }, cellStyle: { background: { color: '#1A2620' } } },
+                        { text: '个体耗时合计', textStyle: { bold: true }, cellStyle: { background: { color: '#1A2620' } } },
+                        { text: '等效提速', textStyle: { bold: true }, cellStyle: { background: { color: '#1A2620' } } },
+                    ],
+                    [
+                        { text: '3 个均衡编码任务', cellStyle: { background: { color: '#0F1512' } } },
+                        { text: '82s', cellStyle: { background: { color: '#0F1512' } } },
+                        { text: '213s', textStyle: { color: 'rgba(233,241,236,0.5)' }, cellStyle: { background: { color: '#0F1512' } } },
+                        { text: '2.6×', textStyle: { bold: true, color: '#3DDC84' }, cellStyle: { background: { color: '#0F1512' } } },
+                    ],
+                    [
+                        { text: '3 个不均衡任务（含调研）', cellStyle: { background: { color: '#131B17' } } },
+                        { text: '698s', cellStyle: { background: { color: '#131B17' } } },
+                        { text: '1007s', textStyle: { color: 'rgba(233,241,236,0.5)' }, cellStyle: { background: { color: '#131B17' } } },
+                        { text: '1.44×', textStyle: { bold: true, color: '#E9F1EC' }, cellStyle: { background: { color: '#131B17' } } },
+                    ],
+                ]}
+            />
+
+            <Box style={{ flexDirection: 'column', gap: 14, marginTop: 4 }}>
+                <Box style={{ flexDirection: 'row', gap: 12 }}>
+                    <Text style={{ fontSize: 13, color: '#3DDC84', width: 22 }}>01</Text>
+                    <Text style={{ fontSize: 15, color: '#E9F1EC', opacity: 0.72, lineHeight: 1.7 }}>并行收益取决于任务均衡度，总时长由最长的那条线决定——所以调研类任务要前置或单独拆出去。</Text>
+                </Box>
+                <Box style={{ flexDirection: 'row', gap: 12 }}>
+                    <Text style={{ fontSize: 13, color: '#3DDC84', width: 22 }}>02</Text>
+                    <Text style={{ fontSize: 15, color: '#E9F1EC', opacity: 0.72, lineHeight: 1.7 }}>契约成本约 2–3 分钟，换来的是整轮返工的消失——这是全篇性价比最高的一笔投入。</Text>
+                </Box>
+                <Box style={{ flexDirection: 'row', gap: 12 }}>
+                    <Text style={{ fontSize: 13, color: '#3DDC84', width: 22 }}>03</Text>
+                    <Text style={{ fontSize: 15, color: '#E9F1EC', opacity: 0.72, lineHeight: 1.7 }}>三条线刚好，五条线开始互相等：并行的上限是"互不依赖的文件数"，不是会话数。</Text>
+                </Box>
+            </Box>
+
+            <Box style={{ marginTop: 'auto', flexDirection: 'row', alignItems: 'center', gap: 10, paddingTop: 14, borderTop: '1px solid rgba(233,241,236,0.08)' }}>
+                <Text style={{ fontSize: 12.5, color: '#E9F1EC', opacity: 0.4 }}>口径：同一台机器、同一批任务、各跑 3 次取中位数；换机器或换任务类型，数字会变，结论方向不会。</Text>
+            </Box>
+        </Box>
+    </Box>
+
+    <Box style={{ height: 26, flexDirection: 'row', justifyContent: 'space-between', alignItems: 'flex-end' }}>
+        <Text style={{ fontSize: 12, color: '#E9F1EC', opacity: 0.38 }}>TRAE 高效开发实战 · 1024 济宁</Text>
+        <Text style={{ fontSize: 12, color: '#E9F1EC', opacity: 0.38 }}>07 / 11</Text>
+    </Box>
+</Slide>

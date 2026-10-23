@@ -1,0 +1,60 @@
+<Slide style={{ width: 1280, height: 720, background: '#0A0D0C', padding: '40px 72px 48px 72px', flexDirection: 'column' }}>
+    <Box style={{ height: 86, flexDirection: 'column', gap: 10 }}>
+        <Text style={{ fontSize: 34, fontWeight: 'bold', color: '#E9F1EC', letterSpacing: 0.5 }}>如果只带走三句话</Text>
+        <Text style={{ fontSize: 17, color: '#E9F1EC', opacity: 0.55 }}>这三句不是口号，是 90 分钟里每一次决策的止损线。</Text>
+    </Box>
+
+    <Box style={{ height: 486, flexDirection: 'row', gap: 32 }}>
+        <Box style={{ width: 300, height: 486, background: '#1A2620', border: '1px solid rgba(61,220,132,0.16)', borderRadius: 6, padding: 28, justifyContent: 'space-between' }}>
+            <Box style={{ flexDirection: 'column', gap: 8 }}>
+                <Text style={{ fontSize: 13, color: '#3DDC84', letterSpacing: 2 }}>THREE RULES</Text>
+                <Text style={{ fontSize: 104, fontWeight: 'bold', color: '#3DDC84', lineHeight: 1 }}>3</Text>
+            </Box>
+            <Box style={{ flexDirection: 'column', gap: 10 }}>
+                <Text style={{ fontSize: 21, fontWeight: 'bold', color: '#E9F1EC', lineHeight: 1.4 }}>三条铁律</Text>
+                <Text style={{ fontSize: 15, color: '#E9F1EC', opacity: 0.6, lineHeight: 1.7 }}>
+                    十条铁律里，只有这三条决定项目会不会崩。其余七条是执行细节，这三条是边界。
+                </Text>
+            </Box>
+        </Box>
+
+        <Box style={{ width: 804, height: 486, flexDirection: 'column', justifyContent: 'space-between' }}>
+            <Box style={{ flexDirection: 'row', gap: 24, height: 148 }}>
+                <Text style={{ width: 56, fontSize: 34, fontWeight: 'bold', color: '#3DDC84', lineHeight: 1.1 }}>01</Text>
+                <Box style={{ flexDirection: 'column', gap: 10 }}>
+                    <Text style={{ fontSize: 22, fontWeight: 'bold', color: '#E9F1EC' }}>演示动线先于代码</Text>
+                    <Text style={{ fontSize: 16, color: '#E9F1EC', opacity: 0.62, lineHeight: 1.7 }}>
+                        代码是给演示服务的，不是反过来。先想清楚 60 秒里观众看到什么，再决定写什么。砍功能的时候，这条线是唯一不用吵架的依据。
+                    </Text>
+                </Box>
+            </Box>
+            <Box style={{ width: 804, height: 1, background: 'rgba(233,241,236,0.09)' }} />
+
+            <Box style={{ flexDirection: 'row', gap: 24, height: 148 }}>
+                <Text style={{ width: 56, fontSize: 34, fontWeight: 'bold', color: '#3DDC84', lineHeight: 1.1 }}>02</Text>
+                <Box style={{ flexDirection: 'column', gap: 10 }}>
+                    <Text style={{ fontSize: 22, fontWeight: 'bold', color: '#E9F1EC' }}>并行之前先冻结接口</Text>
+                    <Text style={{ fontSize: 16, color: '#E9F1EC', opacity: 0.62, lineHeight: 1.7 }}>
+                        否则并行只会变成返工。契约只写四件事：字段名、函数签名、接口路径、文件所有权。十分钟的成本，换掉一整轮对齐。
+                    </Text>
+                </Box>
+            </Box>
+            <Box style={{ width: 804, height: 1, background: 'rgba(233,241,236,0.09)' }} />
+
+            <Box style={{ flexDirection: 'row', gap: 24, height: 148 }}>
+                <Text style={{ width: 56, fontSize: 34, fontWeight: 'bold', color: '#3DDC84', lineHeight: 1.1 }}>03</Text>
+                <Box style={{ flexDirection: 'column', gap: 10 }}>
+                    <Text style={{ fontSize: 22, fontWeight: 'bold', color: '#E9F1EC' }}>演示的稳定性优先于功能的完整性</Text>
+                    <Text style={{ fontSize: 16, color: '#E9F1EC', opacity: 0.62, lineHeight: 1.7 }}>
+                        现场网络、模型额度、端口占用，没有一样在你手里。所以先保证能演完，再谈功能齐全。
+                    </Text>
+                </Box>
+            </Box>
+        </Box>
+    </Box>
+
+    <Box style={{ height: 26, flexDirection: 'row', justifyContent: 'space-between', alignItems: 'flex-end' }}>
+        <Text style={{ fontSize: 12, color: '#E9F1EC', opacity: 0.38 }}>TRAE 高效开发实战 · 1024 济宁</Text>
+        <Text style={{ fontSize: 12, color: '#E9F1EC', opacity: 0.38 }}>02 / 11</Text>
+    </Box>
+</Slide>

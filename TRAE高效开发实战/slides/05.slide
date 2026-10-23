@@ -1,0 +1,99 @@
+<Slide style={{ width: 1280, height: 720, background: '#0A0D0C', padding: '40px 72px 48px 72px', flexDirection: 'column' }}>
+    <Box style={{ height: 86, flexDirection: 'column', gap: 10 }}>
+        <Text style={{ fontSize: 34, fontWeight: 'bold', color: '#E9F1EC', letterSpacing: 0.5 }}>10 分钟写死一份契约，省掉一整轮返工</Text>
+        <Text style={{ fontSize: 17, color: '#E9F1EC', opacity: 0.55 }}>并行之前，先让三条线对同一份 JSON 达成一致——这是唯一值得在开工前花的 10 分钟。</Text>
+    </Box>
+
+    <Box style={{ height: 486, marginTop: 16, flexDirection: 'column', gap: 18 }}>
+        <Box style={{ flexDirection: 'row', gap: 26, height: 348 }}>
+            <Box style={{ width: 640, flexDirection: 'column', gap: 10 }}>
+                <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 8 }}>
+                    <Box style={{ width: 4, height: 14, background: '#3DDC84' }} />
+                    <Text style={{ fontSize: 13, color: '#3DDC84', letterSpacing: 2 }}>契约.md · POST /api/simulate 的响应体</Text>
+                </Box>
+                <CodeBlock
+                    code={`{
+  "存续指数": 71,
+  "判定": "稳态文明",
+  "一句话": "人类没有赢过机器，也没有输给它。",
+  "分支": [
+    { "名称": "共生纪元", "概率": 41, "描述": "…", "信号": "…" },
+    { "名称": "算法温室", "概率": 33, "描述": "…", "信号": "…" },
+    { "名称": "断裂带",   "概率": 26, "描述": "…", "信号": "…" }
+  ],
+  "转折点": ["2031 · …", "2047 · …", "2074 · …"],
+  "回信": "我是 2100 年的人类。…"
+}`}
+                    language='json'
+                    width={640}
+                    fontSize={13}
+                    theme='github-dark'
+                    macHeader={true}
+                />
+            </Box>
+
+            <Box style={{ width: 470, flexDirection: 'column', justifyContent: 'space-between' }}>
+                <Box style={{ flexDirection: 'column', gap: 6 }}>
+                    <Text style={{ fontSize: 15, fontWeight: 'bold', color: '#E9F1EC' }}>① 字段名先死</Text>
+                    <Text style={{ fontSize: 13.5, color: '#E9F1EC', opacity: 0.58, lineHeight: 1.65 }}>中文键名照抄前端，不翻译、不缩写。翻译一次，三边各错一次。</Text>
+                </Box>
+                <Box style={{ flexDirection: 'column', gap: 6 }}>
+                    <Text style={{ fontSize: 15, fontWeight: 'bold', color: '#E9F1EC' }}>② 签名先死</Text>
+                    <Text style={{ fontSize: 13.5, color: '#E9F1EC', opacity: 0.58, lineHeight: 1.65 }}>推演(技术, 共情, 选择) → 字典，返回键与 JSON 完全一致，多一个都不行。</Text>
+                </Box>
+                <Box style={{ flexDirection: 'column', gap: 6 }}>
+                    <Text style={{ fontSize: 15, fontWeight: 'bold', color: '#E9F1EC' }}>③ 边界先死</Text>
+                    <Text style={{ fontSize: 13.5, color: '#E9F1EC', opacity: 0.58, lineHeight: 1.65 }}>概率合计恒为 100、分支固定 3 条、回信 60 字以内、同输入必得同输出。</Text>
+                </Box>
+                <Box style={{ flexDirection: 'column', gap: 6 }}>
+                    <Text style={{ fontSize: 15, fontWeight: 'bold', color: '#3DDC84' }}>④ 所有权先死</Text>
+                    <Text style={{ fontSize: 13.5, color: '#E9F1EC', opacity: 0.58, lineHeight: 1.65 }}>一个文件只有一个负责人；冲突靠切分避免，不靠合并解决。</Text>
+                </Box>
+            </Box>
+        </Box>
+
+        <Table
+            style={{ width: 1136, height: 120 }}
+            defaultTextStyle={{ fontSize: 13, textAlign: 'left', color: '#E9F1EC' }}
+            defaultCellStyle={{
+                border: {
+                    left: { width: 1, color: 'rgba(233,241,236,0.08)' },
+                    right: { width: 1, color: 'rgba(233,241,236,0.08)' },
+                    top: { width: 1, color: 'rgba(233,241,236,0.08)' },
+                    bottom: { width: 1, color: 'rgba(233,241,236,0.08)' },
+                },
+            }}
+            cells={[
+                [
+                    { text: '文件所有权表', textStyle: { bold: true, color: '#3DDC84' }, cellStyle: { background: { color: '#1A2620' } } },
+                    { text: '负责文件', textStyle: { bold: true, color: '#E9F1EC' }, cellStyle: { background: { color: '#1A2620' } } },
+                    { text: '禁止修改', textStyle: { bold: true, color: '#E9F1EC' }, cellStyle: { background: { color: '#1A2620' } } },
+                    { text: '交付标准', textStyle: { bold: true, color: '#E9F1EC' }, cellStyle: { background: { color: '#1A2620' } } },
+                ],
+                [
+                    { text: 'A 引擎', textStyle: { bold: true }, cellStyle: { background: { color: '#0F1512' } } },
+                    { text: '引擎.light、自测.light', cellStyle: { background: { color: '#0F1512' } } },
+                    { text: '其他全部', textStyle: { color: 'rgba(233,241,236,0.45)' }, cellStyle: { background: { color: '#0F1512' } } },
+                    { text: 'light check 通过，三组自测概率合计 100', cellStyle: { background: { color: '#0F1512' } } },
+                ],
+                [
+                    { text: 'B 服务', textStyle: { bold: true }, cellStyle: { background: { color: '#131B17' } } },
+                    { text: '主.light → server.py 薄壳', cellStyle: { background: { color: '#131B17' } } },
+                    { text: '其他全部', textStyle: { color: 'rgba(233,241,236,0.45)' }, cellStyle: { background: { color: '#131B17' } } },
+                    { text: 'curl 一次拿到与契约一致的 JSON', cellStyle: { background: { color: '#131B17' } } },
+                ],
+                [
+                    { text: 'C 前端', textStyle: { bold: true }, cellStyle: { background: { color: '#0F1512' } } },
+                    { text: 'web/index.html、style.css、app.js', cellStyle: { background: { color: '#0F1512' } } },
+                    { text: '其他全部', textStyle: { color: 'rgba(233,241,236,0.45)' }, cellStyle: { background: { color: '#0F1512' } } },
+                    { text: '三态齐全，成功态与错误态均有截图', cellStyle: { background: { color: '#0F1512' } } },
+                ],
+            ]}
+        />
+    </Box>
+
+    <Box style={{ height: 26, flexDirection: 'row', justifyContent: 'space-between', alignItems: 'flex-end' }}>
+        <Text style={{ fontSize: 12, color: '#E9F1EC', opacity: 0.38 }}>TRAE 高效开发实战 · 1024 济宁</Text>
+        <Text style={{ fontSize: 12, color: '#E9F1EC', opacity: 0.38 }}>05 / 11</Text>
+    </Box>
+</Slide>

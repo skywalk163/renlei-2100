@@ -1,0 +1,76 @@
+<Slide style={{ width: 1280, height: 720, background: '#0A0D0C', padding: '40px 72px 48px 72px', flexDirection: 'column' }}>
+    <Box style={{ height: 86, flexDirection: 'column', gap: 10 }}>
+        <Text style={{ fontSize: 34, fontWeight: 'bold', color: '#E9F1EC', letterSpacing: 0.5 }}>现场一定会出问题，问题要提前变成「已绕过」</Text>
+        <Text style={{ fontSize: 17, color: '#E9F1EC', opacity: 0.55 }}>下面是光明语言实测踩到的五个坑——每一个都有确定解法，没有一个靠临场发挥。</Text>
+    </Box>
+
+    <Box style={{ height: 486, marginTop: 16, flexDirection: 'column', gap: 20 }}>
+        <Table
+            style={{ width: 1136, height: 306 }}
+            defaultTextStyle={{ fontSize: 13.5, textAlign: 'left', color: '#E9F1EC' }}
+            defaultCellStyle={{
+                border: {
+                    left: { width: 1, color: 'rgba(233,241,236,0.08)' },
+                    right: { width: 1, color: 'rgba(233,241,236,0.08)' },
+                    top: { width: 1, color: 'rgba(233,241,236,0.08)' },
+                    bottom: { width: 1, color: 'rgba(233,241,236,0.08)' },
+                },
+            }}
+            cells={[
+                [
+                    { text: '坑', textStyle: { bold: true, color: '#3DDC84' }, cellStyle: { background: { color: '#1A2620' } } },
+                    { text: '现象', textStyle: { bold: true }, cellStyle: { background: { color: '#1A2620' } } },
+                    { text: '处理', textStyle: { bold: true }, cellStyle: { background: { color: '#1A2620' } } },
+                ],
+                [
+                    { text: '文件带 BOM', textStyle: { bold: true }, cellStyle: { background: { color: '#0F1512' } } },
+                    { text: '词法错误：未知字符 0xFEFF', textStyle: { color: 'rgba(233,241,236,0.62)' }, cellStyle: { background: { color: '#0F1512' } } },
+                    { text: '存成 UTF-8 无 BOM；PowerShell 用 UTF8Encoding($false) 写文件', cellStyle: { background: { color: '#0F1512' } } },
+                ],
+                [
+                    { text: 'CLI 不在 PATH', textStyle: { bold: true }, cellStyle: { background: { color: '#131B17' } } },
+                    { text: 'light 不是命令', textStyle: { color: 'rgba(233,241,236,0.62)' }, cellStyle: { background: { color: '#131B17' } } },
+                    { text: '全部用 .venv\\Scripts\\light.exe 绝对路径，写进脚本不靠环境', cellStyle: { background: { color: '#131B17' } } },
+                ],
+                [
+                    { text: 'HTTP 服务端不可用', textStyle: { bold: true }, cellStyle: { background: { color: '#0F1512' } } },
+                    { text: '创建HTTP服务端 is not defined', textStyle: { color: 'rgba(233,241,236,0.62)' }, cellStyle: { background: { color: '#0F1512' } } },
+                    { text: 'contrib 只有 Python 腿；改用标准库薄壳，业务一行不搬进 Python', cellStyle: { background: { color: '#0F1512' } } },
+                ],
+                [
+                    { text: '循环语法', textStyle: { bold: true }, cellStyle: { background: { color: '#131B17' } } },
+                    { text: '遍历 i 从 0 到 10 解析失败', textStyle: { color: 'rgba(233,241,236,0.62)' }, cellStyle: { background: { color: '#131B17' } } },
+                    { text: 'L2 写法改用「当 i 小于 11：」+ 手动自增，别猜语法糖', cellStyle: { background: { color: '#131B17' } } },
+                ],
+                [
+                    { text: '参数怎么传', textStyle: { bold: true }, cellStyle: { background: { color: '#0F1512' } } },
+                    { text: '环境变量模块未导出', textStyle: { color: 'rgba(233,241,236,0.62)' }, cellStyle: { background: { color: '#0F1512' } } },
+                    { text: '用 _input.json 传参最稳：写文件、读文件，可复现可回放', cellStyle: { background: { color: '#0F1512' } } },
+                ],
+            ]}
+        />
+
+        <Box style={{ height: 140, background: 'rgba(61,220,132,0.06)', border: '1px solid rgba(61,220,132,0.18)', borderRadius: 4, paddingLeft: 22, paddingRight: 22, paddingTop: 16, paddingBottom: 16, flexDirection: 'column', gap: 12 }}>
+            <Text style={{ fontSize: 13, color: '#3DDC84', letterSpacing: 2 }}>三层兜底 · 断网也要能演</Text>
+            <Box style={{ flexDirection: 'row', gap: 26 }}>
+                <Box style={{ flex: 1, flexDirection: 'column', gap: 4 }}>
+                    <Text style={{ fontSize: 13, color: '#E9F1EC', opacity: 0.45 }}>第一层</Text>
+                    <Text style={{ fontSize: 13.5, color: '#E9F1EC', opacity: 0.78, lineHeight: 1.6 }}>请求 2.5 秒超时后自动走本地 mock，状态栏明确标注「本地兜底」。</Text>
+                </Box>
+                <Box style={{ flex: 1, flexDirection: 'column', gap: 4 }}>
+                    <Text style={{ fontSize: 13, color: '#E9F1EC', opacity: 0.45 }}>第二层</Text>
+                    <Text style={{ fontSize: 13.5, color: '#E9F1EC', opacity: 0.78, lineHeight: 1.6 }}>关键结果预生成 JSON（本项目 1331 组），演示前先跑一次并缓存。</Text>
+                </Box>
+                <Box style={{ flex: 1, flexDirection: 'column', gap: 4 }}>
+                    <Text style={{ fontSize: 13, color: '#E9F1EC', opacity: 0.45 }}>第三层</Text>
+                    <Text style={{ fontSize: 13.5, color: '#E9F1EC', opacity: 0.78, lineHeight: 1.6 }}>提前录好 60 秒屏幕录像——最狠的兜底，也是最不体面的那种。</Text>
+                </Box>
+            </Box>
+        </Box>
+    </Box>
+
+    <Box style={{ height: 26, flexDirection: 'row', justifyContent: 'space-between', alignItems: 'flex-end' }}>
+        <Text style={{ fontSize: 12, color: '#E9F1EC', opacity: 0.38 }}>TRAE 高效开发实战 · 1024 济宁</Text>
+        <Text style={{ fontSize: 12, color: '#E9F1EC', opacity: 0.38 }}>08 / 11</Text>
+    </Box>
+</Slide>

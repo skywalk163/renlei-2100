@@ -1,0 +1,74 @@
+<Slide style={{ width: 1280, height: 720, background: '#0A0D0C', padding: '40px 72px 48px 72px', flexDirection: 'column' }}>
+    <Box style={{ height: 86, flexDirection: 'column', gap: 10 }}>
+        <Text style={{ fontSize: 34, fontWeight: 'bold', color: '#E9F1EC', letterSpacing: 0.5 }}>三个随机关键词，长成一个能演的命题</Text>
+        <Text style={{ fontSize: 17, color: '#E9F1EC', opacity: 0.55 }}>任何关键词都往同一个三段式上映射：一个输入 → 一次处理 → 一个可截图的结果。</Text>
+    </Box>
+
+    <Box style={{ height: 486, flexDirection: 'row', gap: 36 }}>
+        <Box style={{ width: 420, height: 486, position: 'relative' }}>
+            <Image src='assets/shot_mid.png' style={{ width: 420, height: 486, objectFit: 'cover', borderRadius: 6, border: '1px solid rgba(233,241,236,0.12)' }} />
+            <Box style={{ position: 'absolute', left: 22, bottom: 22, width: 376, padding: 14, background: 'rgba(10,13,12,0.94)', border: '1px solid rgba(61,220,132,0.24)', borderRadius: 4, flexDirection: 'column', gap: 6 }}>
+                <Text style={{ fontSize: 12, color: '#3DDC84', letterSpacing: 1 }}>参数 50 / 55 / 60</Text>
+                <Text style={{ fontSize: 14, color: '#E9F1EC', opacity: 0.78, lineHeight: 1.6 }}>
+                    存续指数 57「摇摆文明」——同一输入必得同一输出，不讲随机。
+                </Text>
+            </Box>
+        </Box>
+
+        <Box style={{ width: 680, height: 486, flexDirection: 'column', gap: 20 }}>
+            <Box style={{ flexDirection: 'row', gap: 8 }}>
+                <Box style={{ paddingLeft: 10, paddingRight: 10, paddingTop: 5, paddingBottom: 5, background: 'rgba(61,220,132,0.10)', borderRadius: 3 }}>
+                    <Text style={{ fontSize: 13, color: '#3DDC84' }}>程序</Text>
+                </Box>
+                <Box style={{ paddingLeft: 10, paddingRight: 10, paddingTop: 5, paddingBottom: 5, background: 'rgba(61,220,132,0.10)', borderRadius: 3 }}>
+                    <Text style={{ fontSize: 13, color: '#3DDC84' }}>未来</Text>
+                </Box>
+                <Box style={{ paddingLeft: 10, paddingRight: 10, paddingTop: 5, paddingBottom: 5, background: 'rgba(61,220,132,0.10)', borderRadius: 3 }}>
+                    <Text style={{ fontSize: 13, color: '#3DDC84' }}>人类</Text>
+                </Box>
+                <Text style={{ fontSize: 13, color: '#E9F1EC', opacity: 0.4, marginLeft: 6 }}>三个随机抽到的词，五选一之后留下的那个</Text>
+            </Box>
+
+            <Text style={{ fontSize: 18, color: '#E9F1EC', lineHeight: 1.85 }}>
+                把<span style={{ color: '#3DDC84' }}>技术速率、共情浓度、集体选择</span>三个旋钮交给程序，推演 2100 年的三种人类未来，并收到一封来自 2100 年的回信。它满足三件事：输入极简、结果有叙事、截图可传播。
+            </Text>
+
+            <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 12, marginTop: 4 }}>
+                <Box style={{ width: 196, padding: 14, background: '#1A2620', border: '1px solid rgba(233,241,236,0.10)', borderRadius: 4, flexDirection: 'column', gap: 6 }}>
+                    <Text style={{ fontSize: 12, color: '#3DDC84' }}>INPUT</Text>
+                    <Text style={{ fontSize: 15, color: '#E9F1EC', lineHeight: 1.5 }}>三个 0–100 的滑块</Text>
+                </Box>
+                <Text style={{ fontSize: 18, color: '#3DDC84' }}>→</Text>
+                <Box style={{ width: 196, padding: 14, background: '#1A2620', border: '1px solid rgba(233,241,236,0.10)', borderRadius: 4, flexDirection: 'column', gap: 6 }}>
+                    <Text style={{ fontSize: 12, color: '#3DDC84' }}>PROCESS</Text>
+                    <Text style={{ fontSize: 15, color: '#E9F1EC', lineHeight: 1.5 }}>光明引擎纯函数推演</Text>
+                </Box>
+                <Text style={{ fontSize: 18, color: '#3DDC84' }}>→</Text>
+                <Box style={{ width: 196, padding: 14, background: '#1A2620', border: '1px solid rgba(233,241,236,0.10)', borderRadius: 4, flexDirection: 'column', gap: 6 }}>
+                    <Text style={{ fontSize: 12, color: '#3DDC84' }}>OUTPUT</Text>
+                    <Text style={{ fontSize: 15, color: '#E9F1EC', lineHeight: 1.5 }}>指数 + 三支概率 + 回信</Text>
+                </Box>
+            </Box>
+
+            <Text style={{ fontSize: 15, color: '#E9F1EC', opacity: 0.45, lineHeight: 1.7 }}>
+                另外四个方案被砍的原因很一致：要么需要多页结构，要么需要登录，要么得赌现场的真实数据接口——90 分钟内做不完，也演不稳。
+            </Text>
+
+            <Box style={{ flexDirection: 'row', gap: 28, marginTop: 'auto', paddingTop: 16, borderTop: '1px solid rgba(233,241,236,0.09)' }}>
+                <Box style={{ flexDirection: 'column', gap: 4 }}>
+                    <Text style={{ fontSize: 26, fontWeight: 'bold', color: '#E9F1EC' }}>1331 组</Text>
+                    <Text style={{ fontSize: 13, color: '#E9F1EC', opacity: 0.5 }}>参数预生成，静态版零后端可演</Text>
+                </Box>
+                <Box style={{ flexDirection: 'column', gap: 4 }}>
+                    <Text style={{ fontSize: 26, fontWeight: 'bold', color: '#E9F1EC' }}>3 条</Text>
+                    <Text style={{ fontSize: 13, color: '#E9F1EC', opacity: 0.5 }}>分支概率恒等于 100，纯函数可复现</Text>
+                </Box>
+            </Box>
+        </Box>
+    </Box>
+
+    <Box style={{ height: 26, flexDirection: 'row', justifyContent: 'space-between', alignItems: 'flex-end' }}>
+        <Text style={{ fontSize: 12, color: '#E9F1EC', opacity: 0.38 }}>TRAE 高效开发实战 · 1024 济宁</Text>
+        <Text style={{ fontSize: 12, color: '#E9F1EC', opacity: 0.38 }}>03 / 11</Text>
+    </Box>
+</Slide>

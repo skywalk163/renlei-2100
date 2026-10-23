@@ -3,3 +3,8 @@ __pycache__/
 *.pyc
 .DS_Store
 Thumbs.db
+
+# WorkBuddy 本地数据与 PPT 构建缓存
+.workbuddy-ai/
+TRAE高效开发实战/.cache/
+TRAE高效开发实战/.slidep/

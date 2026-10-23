@@ -1,0 +1,60 @@
+<Slide style={{ width: 1280, height: 720, background: '#0A0D0C', position: 'relative', overflow: 'hidden' }}>
+    <Box style={{ position: 'absolute', left: 72, top: 64, flexDirection: 'row', alignItems: 'center', gap: 12 }}>
+        <Box style={{ width: 26, height: 2, background: '#3DDC84' }} />
+        <Text style={{ fontSize: 13, color: '#3DDC84', letterSpacing: 3 }}>TRAE 高效开发 · 1024 程序员节 · 济宁</Text>
+    </Box>
+
+    <Text style={{ position: 'absolute', left: 72, top: 158, width: 600, fontSize: 50, fontWeight: 'bold', color: '#E9F1EC', lineHeight: 1.22, letterSpacing: 1 }}>
+        90 分钟，从 3 个关键词
+    </Text>
+    <Text style={{ position: 'absolute', left: 72, top: 226, width: 600, fontSize: 50, fontWeight: 'bold', color: '#E9F1EC', lineHeight: 1.22, letterSpacing: 1 }}>
+        到<span style={{ color: '#3DDC84' }}>能上台的 Demo</span>
+    </Text>
+
+    <Text style={{ position: 'absolute', left: 72, top: 322, width: 560, fontSize: 19, color: '#E9F1EC', opacity: 0.58, lineHeight: 1.6 }}>
+        以《人类协议 2100》为唯一案例：一次真实的三线并行复盘，
+        不是功能介绍，是踩过坑之后的复盘。
+    </Text>
+
+    <Box style={{ position: 'absolute', left: 72, top: 428, flexDirection: 'row', gap: 10 }}>
+        <Box style={{ paddingLeft: 12, paddingRight: 12, paddingTop: 6, paddingBottom: 6, border: '1px solid rgba(61,220,132,0.28)', borderRadius: 4 }}>
+            <Text style={{ fontSize: 13, color: '#3DDC84' }}>案例 · 人类协议 2100</Text>
+        </Box>
+        <Box style={{ paddingLeft: 12, paddingRight: 12, paddingTop: 6, paddingBottom: 6, border: '1px solid rgba(233,241,236,0.16)', borderRadius: 4 }}>
+            <Text style={{ fontSize: 13, color: '#E9F1EC', opacity: 0.6 }}>光明语言引擎</Text>
+        </Box>
+        <Box style={{ paddingLeft: 12, paddingRight: 12, paddingTop: 6, paddingBottom: 6, border: '1px solid rgba(233,241,236,0.16)', borderRadius: 4 }}>
+            <Text style={{ fontSize: 13, color: '#E9F1EC', opacity: 0.6 }}>1331 组参数预生成</Text>
+        </Box>
+    </Box>
+
+    <Box style={{ position: 'absolute', left: 72, top: 486, width: 580, flexDirection: 'column', gap: 7 }}>
+        <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 14 }}>
+            <Text style={{ width: 26, fontSize: 13, color: '#3DDC84' }}>01</Text>
+            <Text style={{ fontSize: 15, color: '#E9F1EC', opacity: 0.72 }}>先写 60 秒演示脚本，再写第一行代码</Text>
+        </Box>
+        <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 14 }}>
+            <Text style={{ width: 26, fontSize: 13, color: '#3DDC84' }}>02</Text>
+            <Text style={{ fontSize: 15, color: '#E9F1EC', opacity: 0.72 }}>并行之前，用 10 分钟冻结一份接口契约</Text>
+        </Box>
+        <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 14 }}>
+            <Text style={{ width: 26, fontSize: 13, color: '#3DDC84' }}>03</Text>
+            <Text style={{ fontSize: 15, color: '#E9F1EC', opacity: 0.72 }}>三条线同时开工，靠文件所有权互斥</Text>
+        </Box>
+        <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 14 }}>
+            <Text style={{ width: 26, fontSize: 13, color: '#3DDC84' }}>04</Text>
+            <Text style={{ fontSize: 15, color: '#E9F1EC', opacity: 0.72 }}>实测提速、现场兜底与八种翻车方式</Text>
+        </Box>
+    </Box>
+
+    <Image src='assets/hero_ui.png' style={{ position: 'absolute', left: 690, top: 196, width: 540, height: 420, objectFit: 'cover', borderRadius: 6, border: '1px solid rgba(61,220,132,0.22)' }} />
+
+    <Box style={{ position: 'absolute', left: 690, top: 632, flexDirection: 'row', alignItems: 'center', gap: 10 }}>
+        <Box style={{ width: 6, height: 6, background: '#3DDC84', borderRadius: 3 }} />
+        <Text style={{ fontSize: 12, color: '#E9F1EC', opacity: 0.42 }}>真实界面 · 参数 20 / 90 / 30 的推演结果</Text>
+    </Box>
+
+    <Box style={{ position: 'absolute', left: 72, top: 648, width: 1136, height: 1, background: 'rgba(233,241,236,0.08)' }} />
+    <Text style={{ position: 'absolute', left: 72, top: 664, fontSize: 12, color: '#E9F1EC', opacity: 0.38 }}>2026.10.24 · 济宁</Text>
+    <Text style={{ position: 'absolute', left: 1136, top: 664, width: 72, fontSize: 12, color: '#E9F1EC', opacity: 0.38, textAlign: 'right' }}>01 / 11</Text>
+</Slide>

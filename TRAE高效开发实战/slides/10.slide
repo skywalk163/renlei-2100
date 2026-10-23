@@ -1,0 +1,106 @@
+<Slide style={{ width: 1280, height: 720, background: '#0A0D0C', padding: '40px 72px 48px 72px', flexDirection: 'column' }}>
+    <Box style={{ height: 86, flexDirection: 'column', gap: 10 }}>
+        <Text style={{ fontSize: 34, fontWeight: 'bold', color: '#E9F1EC', letterSpacing: 0.5 }}>八种翻车方式，和上台前的七项自检</Text>
+        <Text style={{ fontSize: 17, color: '#E9F1EC', opacity: 0.55 }}>左边这些坑我们踩过大半；右边这份清单，是上台前十分钟最后过一遍的东西。</Text>
+    </Box>
+
+    <Box style={{ height: 486, marginTop: 16, flexDirection: 'row', gap: 36 }}>
+        <Box style={{ width: 748, flexDirection: 'column', gap: 20 }}>
+            <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 10 }}>
+                <Box style={{ width: 4, height: 14, background: '#3DDC84' }} />
+                <Text style={{ fontSize: 13, color: '#3DDC84', letterSpacing: 2 }}>反模式 · 出现任意一条，当天大概率演不完</Text>
+            </Box>
+            <Box style={{ flexDirection: 'row', gap: 34 }}>
+                <Box style={{ width: 357, flexDirection: 'column', gap: 26 }}>
+                    <Box style={{ flexDirection: 'column', gap: 6 }}>
+                        <Text style={{ fontSize: 13, color: '#E9F1EC', opacity: 0.4 }}>01</Text>
+                        <Text style={{ fontSize: 15.5, color: '#E9F1EC', lineHeight: 1.5 }}>让 TRAE 自由发挥产品方向</Text>
+                        <Text style={{ fontSize: 12.5, color: '#E9F1EC', opacity: 0.45, lineHeight: 1.5 }}>它会给你一个"合理"的产品，但不是能演的那个</Text>
+                    </Box>
+                    <Box style={{ flexDirection: 'column', gap: 6 }}>
+                        <Text style={{ fontSize: 13, color: '#E9F1EC', opacity: 0.4 }}>02</Text>
+                        <Text style={{ fontSize: 15.5, color: '#E9F1EC', lineHeight: 1.5 }}>边写边加需求</Text>
+                        <Text style={{ fontSize: 12.5, color: '#E9F1EC', opacity: 0.45, lineHeight: 1.5 }}>每加一条，三态就要重测一次，时间是复利式消耗</Text>
+                    </Box>
+                    <Box style={{ flexDirection: 'column', gap: 6 }}>
+                        <Text style={{ fontSize: 13, color: '#E9F1EC', opacity: 0.4 }}>03</Text>
+                        <Text style={{ fontSize: 15.5, color: '#E9F1EC', lineHeight: 1.5 }}>三个人改同一个文件</Text>
+                        <Text style={{ fontSize: 12.5, color: '#E9F1EC', opacity: 0.45, lineHeight: 1.5 }}>合并冲突会吃掉你最后的彩排时间</Text>
+                    </Box>
+                    <Box style={{ flexDirection: 'column', gap: 6 }}>
+                        <Text style={{ fontSize: 13, color: '#E9F1EC', opacity: 0.4 }}>04</Text>
+                        <Text style={{ fontSize: 15.5, color: '#E9F1EC', lineHeight: 1.5 }}>现场装依赖</Text>
+                        <Text style={{ fontSize: 12.5, color: '#E9F1EC', opacity: 0.45, lineHeight: 1.5 }}>npm install / pip install 是现场最不可控的一步</Text>
+                    </Box>
+                </Box>
+                <Box style={{ width: 357, flexDirection: 'column', gap: 26 }}>
+                    <Box style={{ flexDirection: 'column', gap: 6 }}>
+                        <Text style={{ fontSize: 13, color: '#E9F1EC', opacity: 0.4 }}>05</Text>
+                        <Text style={{ fontSize: 15.5, color: '#E9F1EC', lineHeight: 1.5 }}>用真实 API 赌现场网络</Text>
+                        <Text style={{ fontSize: 12.5, color: '#E9F1EC', opacity: 0.45, lineHeight: 1.5 }}>会场 WiFi、额度、限流，三样都不归你管</Text>
+                    </Box>
+                    <Box style={{ flexDirection: 'column', gap: 6 }}>
+                        <Text style={{ fontSize: 13, color: '#E9F1EC', opacity: 0.4 }}>06</Text>
+                        <Text style={{ fontSize: 15.5, color: '#E9F1EC', lineHeight: 1.5 }}>把「能跑」当成「能演」</Text>
+                        <Text style={{ fontSize: 12.5, color: '#E9F1EC', opacity: 0.45, lineHeight: 1.5 }}>能跑是给自己看的，能演是给四十个人看的</Text>
+                    </Box>
+                    <Box style={{ flexDirection: 'column', gap: 6 }}>
+                        <Text style={{ fontSize: 13, color: '#E9F1EC', opacity: 0.4 }}>07</Text>
+                        <Text style={{ fontSize: 15.5, color: '#E9F1EC', lineHeight: 1.5 }}>追求功能数量</Text>
+                        <Text style={{ fontSize: 12.5, color: '#E9F1EC', opacity: 0.45, lineHeight: 1.5 }}>五个半成品不如一个能讲完的主线</Text>
+                    </Box>
+                    <Box style={{ flexDirection: 'column', gap: 6 }}>
+                        <Text style={{ fontSize: 13, color: '#E9F1EC', opacity: 0.4 }}>08</Text>
+                        <Text style={{ fontSize: 15.5, color: '#E9F1EC', lineHeight: 1.5 }}>密钥写进代码或提交历史</Text>
+                        <Text style={{ fontSize: 12.5, color: '#E9F1EC', opacity: 0.45, lineHeight: 1.5 }}>Demo 可以重做，泄漏的 Key 收不回来</Text>
+                    </Box>
+                </Box>
+            </Box>
+        </Box>
+
+        <Box style={{ width: 352, background: '#1A2620', border: '1px solid rgba(61,220,132,0.22)', borderRadius: 4, padding: 22, flexDirection: 'column' }}>
+            <Text style={{ fontSize: 13, color: '#3DDC84', letterSpacing: 2 }}>上台前 · 七项自检</Text>
+            <Text style={{ fontSize: 12.5, color: '#E9F1EC', opacity: 0.45, marginTop: 8, lineHeight: 1.6 }}>最后十分钟，从上往下逐条过，一条不过就别上台。</Text>
+            <Box style={{ flexDirection: 'column', gap: 14, marginTop: 20 }}>
+                <Box style={{ flexDirection: 'row', gap: 10, alignItems: 'flex-start' }}>
+                    <Box style={{ width: 12, height: 12, border: '1px solid rgba(61,220,132,0.5)', borderRadius: 2, marginTop: 4 }} />
+                    <Text style={{ fontSize: 14, color: '#E9F1EC', opacity: 0.78 }}>构建与类型检查通过</Text>
+                </Box>
+                <Box style={{ flexDirection: 'row', gap: 10, alignItems: 'flex-start' }}>
+                    <Box style={{ width: 12, height: 12, border: '1px solid rgba(61,220,132,0.5)', borderRadius: 2, marginTop: 4 }} />
+                    <Text style={{ fontSize: 14, color: '#E9F1EC', opacity: 0.78 }}>三态齐全，错误态有重试</Text>
+                </Box>
+                <Box style={{ flexDirection: 'row', gap: 10, alignItems: 'flex-start' }}>
+                    <Box style={{ width: 12, height: 12, border: '1px solid rgba(61,220,132,0.5)', borderRadius: 2, marginTop: 4 }} />
+                    <Text style={{ fontSize: 14, color: '#E9F1EC', opacity: 0.78 }}>断网仍能演示</Text>
+                </Box>
+                <Box style={{ flexDirection: 'row', gap: 10, alignItems: 'flex-start' }}>
+                    <Box style={{ width: 12, height: 12, border: '1px solid rgba(61,220,132,0.5)', borderRadius: 2, marginTop: 4 }} />
+                    <Text style={{ fontSize: 14, color: '#E9F1EC', opacity: 0.78 }}>60 秒脚本彩排过两遍</Text>
+                </Box>
+                <Box style={{ flexDirection: 'row', gap: 10, alignItems: 'flex-start' }}>
+                    <Box style={{ width: 12, height: 12, border: '1px solid rgba(61,220,132,0.5)', borderRadius: 2, marginTop: 4 }} />
+                    <Text style={{ fontSize: 14, color: '#E9F1EC', opacity: 0.78 }}>有录屏兜底</Text>
+                </Box>
+                <Box style={{ flexDirection: 'row', gap: 10, alignItems: 'flex-start' }}>
+                    <Box style={{ width: 12, height: 12, border: '1px solid rgba(61,220,132,0.5)', borderRadius: 2, marginTop: 4 }} />
+                    <Text style={{ fontSize: 14, color: '#E9F1EC', opacity: 0.78 }}>无密码 / Token / 内网地址</Text>
+                </Box>
+                <Box style={{ flexDirection: 'row', gap: 10, alignItems: 'flex-start' }}>
+                    <Box style={{ width: 12, height: 12, border: '1px solid rgba(61,220,132,0.5)', borderRadius: 2, marginTop: 4 }} />
+                    <Text style={{ fontSize: 14, color: '#E9F1EC', opacity: 0.78 }}>git status 干净，最后一次 commit 能跑</Text>
+                </Box>
+            </Box>
+
+            <Box style={{ marginTop: 'auto', paddingTop: 16, borderTop: '1px solid rgba(233,241,236,0.10)', flexDirection: 'column', gap: 6 }}>
+                <Text style={{ fontSize: 13, fontWeight: 'bold', color: '#3DDC84' }}>七条全过再上台</Text>
+                <Text style={{ fontSize: 12.5, color: '#E9F1EC', opacity: 0.45, lineHeight: 1.6 }}>有一条不过就先修它——台下不会给你第二次机会。</Text>
+            </Box>
+        </Box>
+    </Box>
+
+    <Box style={{ height: 26, flexDirection: 'row', justifyContent: 'space-between', alignItems: 'flex-end' }}>
+        <Text style={{ fontSize: 12, color: '#E9F1EC', opacity: 0.38 }}>TRAE 高效开发实战 · 1024 济宁</Text>
+        <Text style={{ fontSize: 12, color: '#E9F1EC', opacity: 0.38 }}>10 / 11</Text>
+    </Box>
+</Slide>

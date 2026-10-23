@@ -1,0 +1,98 @@
+<Slide style={{ width: 1280, height: 720, background: '#0A0D0C', padding: '40px 72px 48px 72px', flexDirection: 'column' }}>
+    <Box style={{ height: 86, flexDirection: 'column', gap: 10 }}>
+        <Text style={{ fontSize: 34, fontWeight: 'bold', color: '#E9F1EC', letterSpacing: 0.5 }}>90 分钟怎么切，以及什么时候必须砍</Text>
+        <Text style={{ fontSize: 17, color: '#E9F1EC', opacity: 0.55 }}>每一段都带检查点；熔断顺序提前定死，现场不讨论、不投票。</Text>
+    </Box>
+
+    <Box style={{ height: 486, marginTop: 16, flexDirection: 'row', gap: 40 }}>
+        <Box style={{ width: 680, flexDirection: 'column', justifyContent: 'space-between' }}>
+            <Box style={{ flexDirection: 'row', gap: 18 }}>
+                <Text style={{ width: 76, fontSize: 19, fontWeight: 'bold', color: '#3DDC84' }}>0–10</Text>
+                <Box style={{ flexDirection: 'column', gap: 5 }}>
+                    <Text style={{ fontSize: 16.5, fontWeight: 'bold', color: '#E9F1EC' }}>发散选题，只留一个</Text>
+                    <Text style={{ fontSize: 13.5, color: '#E9F1EC', opacity: 0.55, lineHeight: 1.6 }}>检查点：说得出「谁的问题」，而不是「用了什么技术」</Text>
+                </Box>
+            </Box>
+            <Box style={{ height: 1, background: 'rgba(233,241,236,0.09)' }} />
+
+            <Box style={{ flexDirection: 'row', gap: 18 }}>
+                <Text style={{ width: 76, fontSize: 19, fontWeight: 'bold', color: '#3DDC84' }}>10–25</Text>
+                <Box style={{ flexDirection: 'column', gap: 5 }}>
+                    <Text style={{ fontSize: 16.5, fontWeight: 'bold', color: '#E9F1EC' }}>写 60 秒脚本，跑通空壳</Text>
+                    <Text style={{ fontSize: 13.5, color: '#E9F1EC', opacity: 0.55, lineHeight: 1.6 }}>检查点：页面能打开，按钮能点，先不接任何真实数据</Text>
+                </Box>
+            </Box>
+            <Box style={{ height: 1, background: 'rgba(233,241,236,0.09)' }} />
+
+            <Box style={{ flexDirection: 'row', gap: 18 }}>
+                <Text style={{ width: 76, fontSize: 19, fontWeight: 'bold', color: '#3DDC84' }}>25–60</Text>
+                <Box style={{ flexDirection: 'column', gap: 5 }}>
+                    <Text style={{ fontSize: 16.5, fontWeight: 'bold', color: '#3DDC84' }}>三包并行，出首版可演示</Text>
+                    <Text style={{ fontSize: 13.5, color: '#E9F1EC', opacity: 0.62, lineHeight: 1.6 }}>检查点：25 分钟必须有可点版本；每 15 分钟合一次，合并只动入口</Text>
+                </Box>
+            </Box>
+            <Box style={{ height: 1, background: 'rgba(233,241,236,0.09)' }} />
+
+            <Box style={{ flexDirection: 'row', gap: 18 }}>
+                <Text style={{ width: 76, fontSize: 19, fontWeight: 'bold', color: '#3DDC84' }}>60–75</Text>
+                <Box style={{ flexDirection: 'column', gap: 5 }}>
+                    <Text style={{ fontSize: 16.5, fontWeight: 'bold', color: '#E9F1EC' }}>补三态，开始砍功能</Text>
+                    <Text style={{ fontSize: 13.5, color: '#E9F1EC', opacity: 0.55, lineHeight: 1.6 }}>检查点：断网也能演，错误态有重试，控制台没有红色报错</Text>
+                </Box>
+            </Box>
+            <Box style={{ height: 1, background: 'rgba(233,241,236,0.09)' }} />
+
+            <Box style={{ flexDirection: 'row', gap: 18 }}>
+                <Text style={{ width: 76, fontSize: 19, fontWeight: 'bold', color: '#3DDC84' }}>75–90</Text>
+                <Box style={{ flexDirection: 'column', gap: 5 }}>
+                    <Text style={{ fontSize: 16.5, fontWeight: 'bold', color: '#E9F1EC' }}>照脚本彩排两遍，录屏</Text>
+                    <Text style={{ fontSize: 13.5, color: '#E9F1EC', opacity: 0.55, lineHeight: 1.6 }}>检查点：60 秒内讲完；录屏文件已经在桌面上</Text>
+                </Box>
+            </Box>
+        </Box>
+
+        <Box style={{ width: 416, flexDirection: 'column', gap: 18 }}>
+            <Box style={{ background: '#1A2620', border: '1px solid rgba(233,241,236,0.10)', borderRadius: 4, padding: 18, flexDirection: 'column', gap: 12 }}>
+                <Text style={{ fontSize: 13, color: '#3DDC84', letterSpacing: 2 }}>熔断顺序 · 从后往前砍</Text>
+                <Box style={{ flexDirection: 'row', gap: 10, alignItems: 'center' }}>
+                    <Text style={{ fontSize: 13, color: '#E9F1EC', opacity: 0.4 }}>①</Text>
+                    <Text style={{ fontSize: 14.5, color: '#E9F1EC', opacity: 0.6 }}>登录与权限</Text>
+                </Box>
+                <Box style={{ flexDirection: 'row', gap: 10, alignItems: 'center' }}>
+                    <Text style={{ fontSize: 13, color: '#E9F1EC', opacity: 0.4 }}>②</Text>
+                    <Text style={{ fontSize: 14.5, color: '#E9F1EC', opacity: 0.6 }}>后台与多页面</Text>
+                </Box>
+                <Box style={{ flexDirection: 'row', gap: 10, alignItems: 'center' }}>
+                    <Text style={{ fontSize: 13, color: '#E9F1EC', opacity: 0.4 }}>③</Text>
+                    <Text style={{ fontSize: 14.5, color: '#E9F1EC', opacity: 0.6 }}>花哨动效</Text>
+                </Box>
+                <Box style={{ flexDirection: 'row', gap: 10, alignItems: 'center' }}>
+                    <Text style={{ fontSize: 13, color: '#3DDC84' }}>④</Text>
+                    <Text style={{ fontSize: 14.5, color: '#3DDC84' }}>只留「输入 → 结果」主线</Text>
+                </Box>
+                <Text style={{ fontSize: 12.5, color: '#E9F1EC', opacity: 0.4, marginTop: 2 }}>砍到第 ④ 步，Demo 仍然成立——这就是下限。</Text>
+            </Box>
+
+            <Box style={{ background: 'rgba(61,220,132,0.06)', border: '1px solid rgba(61,220,132,0.18)', borderRadius: 4, padding: 18, flexDirection: 'column', gap: 12 }}>
+                <Text style={{ fontSize: 13, color: '#3DDC84', letterSpacing: 2 }}>三个硬节点</Text>
+                <Box style={{ flexDirection: 'column', gap: 3 }}>
+                    <Text style={{ fontSize: 15.5, fontWeight: 'bold', color: '#E9F1EC' }}>25 分钟 · 必须有可点版本</Text>
+                    <Text style={{ fontSize: 12.5, color: '#E9F1EC', opacity: 0.45 }}>没有它，后面的所有计划都是纸上的</Text>
+                </Box>
+                <Box style={{ flexDirection: 'column', gap: 3 }}>
+                    <Text style={{ fontSize: 15.5, fontWeight: 'bold', color: '#E9F1EC' }}>75 分钟 · 必须停止写代码</Text>
+                    <Text style={{ fontSize: 12.5, color: '#E9F1EC', opacity: 0.45 }}>再写就没人有时间彩排</Text>
+                </Box>
+                <Box style={{ flexDirection: 'column', gap: 3 }}>
+                    <Text style={{ fontSize: 15.5, fontWeight: 'bold', color: '#3DDC84' }}>90 分钟 · 必须完整讲一遍</Text>
+                    <Text style={{ fontSize: 12.5, color: '#E9F1EC', opacity: 0.45 }}>讲不完的 Demo，等于没做</Text>
+                </Box>
+            </Box>
+        </Box>
+    </Box>
+
+    <Box style={{ height: 26, flexDirection: 'row', justifyContent: 'space-between', alignItems: 'flex-end' }}>
+        <Text style={{ fontSize: 12, color: '#E9F1EC', opacity: 0.38 }}>TRAE 高效开发实战 · 1024 济宁</Text>
+        <Text style={{ fontSize: 12, color: '#E9F1EC', opacity: 0.38 }}>09 / 11</Text>
+    </Box>
+</Slide>
